@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <fieldset>
+      <form action="" name="myForm">
+        <h1>Register with us</h1>
+        <section class="username">
+          <label for="username">Username</label>
+          <input type="text" name="username" placeholder="Enter username" />
+          <p id="username">Please enter username</p>
+        </section>
+        <section class="email">
+          <label for="email">Email</label>
+          <input type="text" name="email" placeholder="Enter email" />
+          <p id="email">please enter valid email address</p>
+        </section>
+        <section class="password">
+          <label for="password">Password</label>
+          <input type="password" name="password" placeholder="Enter password" />
+          <p id="password">please enter at least 6 characters</p>
+        </section>
+        <section class="confirmPassword">
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            name="confirmPassword"
+            placeholder="Enter password again"
+          />
+          <p id="confirmPassword">please enter same password</p>
+        </section>
+        <section class="submit-button">
+          <button type="submit">Submit</button>
+        </section>
+      </form>
+    </fieldset>
+    <section class="popup">all fields are valid</section>
+    <script src="./app.js"></script>
+  </body>
+</html>
